@@ -95,6 +95,8 @@
     .form{
         margin-left: -1%;
         padding: 0;
+        margin-top: 90%;
+        display: none !important;
     }
     .f-v{
         margin-bottom: 190%;
@@ -115,6 +117,8 @@
     #intouch{
         font-size: 10px;
         margin-left: -50%;
+        margin-top: 80%;
+        display: none !important;
         width: fit-content;
         margin: 0 33% 4% 0%;
     }
