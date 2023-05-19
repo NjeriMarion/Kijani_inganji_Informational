@@ -1,125 +1,208 @@
-@media screen and (max-width:700px){
-    .footer{
-        display: inline;
-        /* grid-template-columns: 20px; */
-        gap: 2px;
-        margin-left: -10%px;
-        margin-right: 0px;
+
+/* Default styles */
+#logo {
+    width: 40%;
+    margin-left: 4%;
+    padding: 10px;
+    margin-top: -7%;
+  }
+  
+  .body {
+    background-color: #e6fcf5;
+    color: black;
+  }
+  
+  .navbar {
+    margin-left: 63%;
+    margin-top: -5%;
+    padding: 10px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: -10%;
+  }
+  
+  .nav ul li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  #brand {
+    width: 15%;
+    margin-left: 15%;
+  }
+  
+  .about {
+    text-align: center;
+    color: black;
+    background-color: #c3fae8;
+    color: #087f5b;
+    border-radius: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  
+  #pic {
+    width: 85%;
+    margin-left: 5%;
+    border-radius: 115px;
+    margin-top: -3%;
+  }
+  
+  .us {
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+  }
+  
+  .kijani {
+    color: #087f5b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10%;
+    margin-left: -5%;
+    line-height: 33px;
+    margin-top: -1%;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  
+  #hr {
+    text-decoration: underline;
+    border-bottom: 1px solid #88c794;
+  }
+  
+  .about span {
+    border-bottom: #88c794 dotted 5px;
+    font-size: 40px;
+    font-weight: 900;
+  }
+  
+  .f-v {
+    display: flex;
+    gap: 5%;
+    padding-left: 20%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    background: url(pictures/in.jpg);
+    opacity: 70%;
+    color: black;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+  
+    .nav {
+      /* flex-wrap: wrap; */
+      /* justify-content: center; */
+      margin-top: 0;
+      padding-right: 40%;
+      border-bottom: #087f5b solid 1px;
     }
-    .navbar{
-        
-            margin-left: 3%;
-            margin-top: -5%;
-            padding: 10px;
-        
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-    body{
-        /* width:200px; */
-        margin: 0%;
-        /* font-size: 5px; */
-        padding: 0%;
-    }
-    .team {
-        display: grid;
-        grid-template-columns: 200px;
-        margin-bottom: 5%;
-        margin-top: -210%;
-        padding-left: 8%;
-        width: fit-content;
-    }
-    #our {
-        margin-top: 390%;
-        margin-bottom: 4%;
-        margin-left: 17%;
-        width: fit-content;
-    }
-    .about{
-        display: none !important;
-        display: grid;
-        grid-template-columns: 20px;
-        
-        margin-left: 4%;
-        /* color:black; */
-        /* color: #2B8A3E; */
-        font-size: 40px;
-        width: 400px;
-    }
-    .us{
-        display: grid;
-        grid-template-columns: 200px;
-    }
-    .navbar{
-        margin-left: 3%;
-        width: fit-content;
-    }
-    .nav{
-        display: inline;
-        margin-top: -10%;
-        width: fit-content;
-    }
-    #pic{
-        /* width: 10%; */
-        margin-left: 1%;
-        border-radius: 115px;
-    }
-    #brand{
-        /* width: 5%; */
-        margin-left: -10%;
-    }
-    /* footer{
-        padding: 2% 0%;
-        width: fit-content;
-        margin-top: 160%;
-        display: none !important;
-    }
-    footer ul{
-        display: inline;
+  
+    /* .nav ul li {
+      font-size: 40px;
     } */
-    #hr{
-        text-decoration: underline;
-        border-bottom: 1px solid ;
-        width: 200px;
-        margin-left: -10%;
+    #brand {
+      margin-left: 0;
+      width: 30%;
+      margin-top: 2%;
+      /* text-align: center; */
     }
-    .team div p{
-        width: fit-content;
+  
+    .us {
+      grid-template-columns: 1fr;
     }
-    #message{
-        margin-top: 3%;
-        margin-left: -20%;
-        /* width: fit-content; */
-        height: 10%;
+  
+    .kijani {
+      font-size: 19px;
+      padding: -5%;
+      padding-left: 20%;
     }
-    .form{
-        margin-left: -1%;
-        padding: 0;
-        margin-top: 90%;
-        display: none !important;
+  
+    #our {
+      padding-left: 5%;
+      font-size: 30px;
+    }
+  
+    .team {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      gap: 3%;
+    }
+  
+    .form {
+      margin-left: 10%;
+      font-size: 18px;
+    }
+  
+    #touch {
+      font-size: 30px;
+    }
+    footer{
+        margin-top: 70%;
+        padding: 0%;
+        /* display: inline; */
+        /* display: none !important; */
+    }
+    footer ul {
+      margin-left: 0%;
+      display: inline;
+      margin-left: -4%;
+      /* justify-content: center; */
     }
     .f-v{
-        margin-bottom: 190%;
-        padding-left: -20%;
-        padding: 0%;
+        display: none !important;
+    }
+    .about{
+        /* width: 70px; */
+        font-size: 10px;
+        background:none;
+        /* margin-left: 18%; */
+        margin-bottom: 10%;
+    }
+    .about span {
+        font-size: 30px;
+        color: #0b7285;
+    }
+    .team div{
+        margin-left: 10%;
+        margin-top: 1%;
+        /* display: flex; */
     }
     .team div img{
         width: 200px;
         height: 200px;
+        /* margin-left: -20%; */
+        margin-top: -5%;
     }
-    footer{
-        padding:0% -51%;
+    .team div p{
+        margin-left: 10%;
+    }
+    #hr {
+        width: 100px;
         display: none !important;
     }
-    .submit{
-        margin-left: -3%;
+    #demo{
+        margin-left:-5% ;
     }
-    #intouch{
-        font-size: 10px;
-        margin-left: -50%;
-        margin-top: 80%;
-        display: none !important;
-        width: fit-content;
-        margin: 0 33% 4% 0%;
-    }
-}
+    /* #brand{ */
+        /* width: 105px; */
+    /* } */
+  }
+  
+  /* Media query for even
+  
